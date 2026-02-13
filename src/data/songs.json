@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Mi Primera Canción Para Ti",
+    "description": "Una canción especial",
+    "audioUrl": "/audios/cancion1.mp3",
+    "date": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "title": "Nuestro Amor",
+    "description": "Dedicada a ti mi amor",
+    "audioUrl": "/audios/cancion2.mp3",
+    "date": "2024-02-14"
+  }
+]

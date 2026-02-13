@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "figma:asset/8759c7f7966ef718ebb23ae8e6e7ad8a625da030.png",
+    "caption": "Momentos especiales juntos ❤️",
+    "date": "2024-12-03"
+  },
+  {
+    "id": 2,
+    "imageUrl": "/photos/foto2.jpg",
+    "caption": "Recuerdos inolvidables",
+    "date": "2024-02-14"
+  },
+  {
+    "id": 3,
+    "imageUrl": "/photos/foto3.jpg",
+    "caption": "Te amo mi amor",
+    "date": "2024-03-20"
+  }
+]
