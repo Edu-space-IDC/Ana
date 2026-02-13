@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Volume2, VolumeX, Play, Pause, Music, ChevronUp } from "lucide-react";
-import backgroundMusic from "../assets/background-music.m4a";
 
 export function BackgroundMusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -97,7 +96,7 @@ export function BackgroundMusicPlayer() {
   const handleAudioError = () => {
     setHasError(true);
     setIsPlaying(false);
-    console.error("No se pudo cargar el archivo de música. Asegúrate de tener el archivo en: /public/assets/background-music.mp3");
+    console.error("No se pudo cargar el archivo de música. Asegúrate de tener el archivo en: /public/assets/background-music.m4a");
   };
 
   // Error message
@@ -115,7 +114,7 @@ export function BackgroundMusicPlayer() {
             Agrega tu archivo MP3 en:
           </p>
           <code className="bg-[#1a1a1a] text-[#7F49B4] px-3 py-2 rounded-lg text-xs block mb-2">
-            /public/assets/background-music.mp3
+            /public/assets/background-music.m4a
           </code>
           <p className="text-[#cfcfcf]/60 text-xs">
             Lee: <strong>COMO-AGREGAR-MUSICA.md</strong>
@@ -263,7 +262,7 @@ export function BackgroundMusicPlayer() {
       {/* Audio element */}
       <audio
         ref={audioRef}
-        src={backgroundMusic}
+        src="/assets/background-music.m4a"
         loop
         onError={handleAudioError}
       />

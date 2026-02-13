@@ -91,7 +91,7 @@ export default function App() {
               {[...Array(8)].map((_, i) => (
                 <motion.div
                   key={i}
-                  className="absolute top-1/2 left-1/2"
+                  className="absolute top-1/2 left-1/2 text-5xl"
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{
                     opacity: [0, 1, 0],
@@ -106,7 +106,6 @@ export default function App() {
                     times: [0, 0.5, 1],
                     ease: "easeOut"
                   }}
-                  className="text-5xl"
                 >
                   {i % 2 === 0 ? "💜" : "✨"}
                 </motion.div>
