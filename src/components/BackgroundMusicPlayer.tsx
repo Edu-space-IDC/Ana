@@ -99,30 +99,7 @@ export function BackgroundMusicPlayer() {
     console.error("No se pudo cargar el archivo de música. Asegúrate de tener el archivo en: /public/assets/background-music.mp3");
   };
 
-  // Error message
-  if (hasError) {
-    return (
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 1, duration: 0.7, type: "spring", bounce: 0.3 }}
-        className="fixed top-4 right-4 z-50"
-      >
-        <div className="dark-card rounded-xl px-5 py-4 shadow-2xl max-w-sm border-2 border-orange-500/30">
-          <p className="text-[#cfcfcf] font-medium mb-2">⚠️ Archivo de música no encontrado</p>
-          <p className="text-[#cfcfcf]/70 text-sm mb-2">
-            Agrega tu archivo MP3 en:
-          </p>
-          <code className="bg-[#1a1a1a] text-[#7F49B4] px-3 py-2 rounded-lg text-xs block mb-2">
-            /public/assets/background-music.mp3
-          </code>
-          <p className="text-[#cfcfcf]/60 text-xs">
-            Lee: <strong>COMO-AGREGAR-MUSICA.md</strong>
-          </p>
-        </div>
-      </motion.div>
-    );
-  }
+ 
 
   return (
     <>
