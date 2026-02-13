@@ -6,7 +6,7 @@ import { Volume2, VolumeX, Play, Pause, Music, ChevronUp } from "lucide-react";
 export function BackgroundMusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
-  const [volume, setVolume] = useState(0.7);
+  const [volume, setVolume] = useState(1.0);
   const [hasError, setHasError] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
