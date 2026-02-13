@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Volume2, VolumeX, Play, Pause, Music, ChevronUp } from "lucide-react";
+import backgroundMusic from "../assets/background-music.m4a";
+
 
 export function BackgroundMusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -262,7 +264,11 @@ export function BackgroundMusicPlayer() {
       {/* Audio element */}
       <audio
         ref={audioRef}
+<<<<<<< HEAD
         src="/assets/background-music.m4a"
+=======
+        src={backgroundMusic}
+>>>>>>> 022acd361cf8f893d80448a76f00ed2986c25c9c
         loop
         onError={handleAudioError}
       />
